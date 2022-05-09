@@ -3,7 +3,7 @@
 
 DPS is a new framework for easily constructing efficient deterministic
 parallel SAT solvers, providing the delayed clause exchange technique
-introduced in ManyGLucose. DPS-Kissat applies our framework to Kissat,
+introduced in [[https://github.com/nabesima/manyglucose-satcomp2020][ManyGlucose]]. DPS-Kissat applies our framework to [[http://fmv.jku.at/kissat/][Kissat]],
 a state-of-the-art sequential SAT solver.
 
 * How to build a docker container for AWS environment
@@ -11,9 +11,10 @@ a state-of-the-art sequential SAT solver.
 : % cd leader
 : % docker build -t dps:leader .
 
-# DPS is a parallel SAT solver for shared memory environments. Thus we
-# do not require a worker container. Given a problem, the container
-# starts 32 threads that each run Kissat and solve the problem as a
-# portfolio solver.  DPS-Kissat adopts the following simple diversity strategy
-# 1. random variable selection up to the first contradiction
-# 2. disabled elimination in half of the workers.
+DPS-Kissat is a parallel SAT solver for shared memory
+environments. Thus we do not require a worker container.
+# Given a problem, the container starts 32 threads that each run
+# Kissat and solve the problem as a portfolio solver.  DPS-Kissat
+# adopts the following simple diversity strategy 1. random variable
+# selection up to the first contradiction 2. disabled elimination in
+# half of the workers.
