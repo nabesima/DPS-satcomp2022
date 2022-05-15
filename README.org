@@ -11,6 +11,9 @@ a state-of-the-art sequential SAT solver.
 : % cd leader
 : % docker build -t dps:leader .
 
+~dps:leader~ container is based on ~satcomp-base:leader~ container
+provided by
+https://github.com/aws-samples/aws-batch-comp-infrastructure-sample.
 DPS-Kissat is a parallel SAT solver for shared memory
 environments. Thus we do not require a worker container.
 # Given a problem, the container starts 32 threads that each run
