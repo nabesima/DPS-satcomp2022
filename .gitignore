@@ -5,4 +5,6 @@
 *.tex
 *.cls
 conference-latex-template_10-17-19.zip
+/worker-dummy
+/instances
 
