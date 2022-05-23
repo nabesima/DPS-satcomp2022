@@ -1,10 +1,12 @@
-#+TITLE: DPS-Kissat
+#+TITLE: DPS-Kissat-non-det
 #+AUTHOR:  Hidetomo Nabeshima, Tsubasa Fukiage, Yuto Obitsu, Xiao-Nan LU, and Katsumi Inoue
 
 DPS is a new framework for easily constructing efficient deterministic
 parallel SAT solvers, providing the delayed clause exchange technique
 introduced in [[https://github.com/nabesima/manyglucose-satcomp2020][ManyGlucose]]. DPS-Kissat applies our framework to [[http://fmv.jku.at/kissat/][Kissat]],
-a state-of-the-art sequential SAT solver.
+a state-of-the-art sequential SAT solver. DPS also supports
+non-deterministic execution. DPS-Kissat-non-det is the
+non-deterministic version of DPS-Kissat.
 
 * How to build a docker container for AWS environment
 
